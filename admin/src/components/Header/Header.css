@@ -16,22 +16,26 @@
   justify-content: space-between;
   width: 100%;
 }
-.logo {
-  height: 100px;
-  width: 200px;
-  transform: scale(1.2);
-  object-fit: contain;
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  transform: scale(1.5) translateY(5px);
 }
 
 h1 {
   margin-left: 15px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-
 .navigation {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-left: auto; 
 }
 
 .nav-links {
@@ -63,12 +67,13 @@ h1 {
 .nav-links a span,
 .nav-links button span {
   margin-left: 8px;
+  
 }
 
 .nav-links a:hover,
 .nav-links button:hover {
-  transform: scale(1.1);
-  background-color: var(--modal-background-color);
+ transform: scale(1.1);
+ background-color:var(--modal-background-color);
 }
 
 .hamburger {
@@ -81,7 +86,7 @@ h1 {
   .navigation {
     display: none;
     position: fixed;
-    top: 87px;
+    top: 95px;
     right: 0;
     width: 200px;
     z-index: 99;
