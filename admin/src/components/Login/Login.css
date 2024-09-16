@@ -1,0 +1,114 @@
+
+.login-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-color);
+  color: var(--white);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;  
+}
+.login-container h1{
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight:600;
+}
+input {
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+after { clear: both; }
+
+#login {
+  margin: 50px auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#login form {
+  margin: auto; 
+  width: 100%;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: var(--white);
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+#login form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 265px;
+  height: 50px;
+}
+.password-container{
+  position: relative;
+}
+
+#login form input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 265px;
+  height: 50px;
+}
+.password-toggle-button {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  background-color: #3b4148;
+  color: #FFFFFF; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 50px;
+}
+
+.password-toggle-button:hover {
+  color: #7d7474;
+}
+
+.password-toggle-button .svg-inline--fa {
+  font-size: 1.2rem;
+}
+
+#login form input[type="submit"] {
+  background: var(--button-color);
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+#login form input[type="submit"]:hover {
+  background: #bc583d;
+}

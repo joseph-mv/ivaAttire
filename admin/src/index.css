@@ -1,0 +1,39 @@
+:root {
+  --background-color: #332532; /* Deep Purple */
+  --primary-font-color: #F7F7F7; /* Light Ivory */
+  --secondary-font-color: #D9B8C4; /* Soft Pink */
+  --button-color: #E07A5F; /* Warm Coral */
+  --white: #FFFFFF; /* White */
+  --heading-color: #F2CC8F; /* Warm Beige */
+  --subheading-color: #F4A261; /* Peach */
+  --modal-background-color: #4A3F45; /* Dark Mauve */
+  --modal-border-color: #E9C46A; /* Golden Yellow */
+}
+html {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+.fixed-body{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
